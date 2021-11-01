@@ -38,7 +38,7 @@ index 1638b8c13..b1440f300 100644
  }
  
 -static DWORD poll_thread(LPVOID lpThreadParameter)
-+static DWORD __stdcall poll_thread(LPVOID lpThreadParameter)
++static DWORD LIBUSB_CALL poll_thread(LPVOID lpThreadParameter)
  {
  	libusb_hotplug_callback_handle handle;
  	UDEVMAN* udevman = (UDEVMAN*)lpThreadParameter;
